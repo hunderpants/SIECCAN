@@ -1,0 +1,435 @@
+/*
+Theme Name: Taleron
+Theme URI: http://andrebonner.org/wordpress/taleron
+Author: Andre Bonner
+Author URI: http://andrebonner.com/
+Description: In Taleron, my custom theme.
+Version: 1.0
+Text Domain: taleron
+
+*/
+
+
+body{
+	font-family: 'Droid Sans', sans-serif;
+	min-width: 800px;
+	width: 100%;
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+#wrapper{
+	margin: 0 10px;
+	height: 100%;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-left: 28px;
+	padding-right: 28px;
+	
+}
+
+header{
+	zoom: 1;
+	margin-top: 0;
+	font-family: 'Droid Sans', sans-serif;
+	background-color: #700a20;
+	background-image: url('images/header-bg.jpg');
+	background-size:cover;
+}
+
+header #head-info{
+	margin-left: 60px;
+	margin-right: 60px;
+	min-height: 140px;
+}
+
+header h1{
+	margin:0;
+	padding: 0;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size: 50px;
+}
+
+header a{
+	color: #fff;
+	text-decoration: none;	
+}
+
+header h5{
+	margin: 0;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+header nav{
+	padding: 0;	
+}
+
+#menu-primary-links{
+	
+}
+
+header .menu {
+	margin: 0;
+	background-color: #b61235;
+	padding-top: 1%;
+	min-height: 30px;
+}
+
+header .menu li{
+	margin: 0;
+	list-style: none;
+	display: inline;
+	padding: 0 20px;
+}
+
+header .current_page_item a, header .current-page-ancestor a
+{
+	border-color: #f7be2f;
+	border-bottom-style: solid;
+	border-bottom-width: 5px 
+}
+
+header .menu a:hover{
+	border-color: #f7be2f;
+	border-bottom-style: solid;
+	border-bottom-width: 5px 
+}
+
+header .menu a{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin: 0px;
+	padding: 1% 0; 
+}
+
+section{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+ 	width: 60%;
+	min-width: 500px;
+}
+
+.post{
+	border-top:solid 8px #b31133;
+	border-left: solid 1px #999;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	margin-right: 20px;
+	padding-left : 10px;
+	padding-right: 20px;
+}
+
+section .post h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: light;
+	font-size: 34px;
+	text-transform:uppercase;
+}
+
+section .post p{
+	font-family: 'Droid Sans', sans-serif;
+	font-size:14px;
+	color: #565656;	
+}
+
+#updates{
+	padding-left: 10px;
+	padding-right: 26px;
+	margin-right: 20px;
+	border: solid 1px #999;
+}
+
+#updates h1{
+	font-family: 'Oswald', sans-serif;
+	position:relative;
+	display: inline-block;
+	margin-left: 10px;
+	padding: 0 10px;
+	font-weight: light;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #000;
+}
+
+#updates div{
+	
+	
+}
+
+.itemblock{	
+	padding: 6px 0;
+ 	width: 100%;
+	min-width: 400px;
+	border-bottom: thin dotted #999;
+}
+
+.itemheadblock {
+	padding: 8px 0;
+}
+
+.itemendblock{
+	padding: 8px 0;
+	margin-bottom: 28px;
+}
+
+.item{
+	float:left;
+	padding: 0 6px;
+	width: 90%;
+}
+
+.item a{
+	/* Droid Sans Regular 13px #6e0206 */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+	color: #6e0206;
+}
+
+.itemhead{
+	/* Droid Sans 14px #343733*/
+	padding: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #343733;
+}
+
+.itemnum{
+	float:left;
+	width: 2%;
+	border-radius: 2px;
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff; 
+	margin: 0 10px;
+}
+
+.publishdate{
+	/* Droid Sans Regular 12px #545454*/
+	padding: 6px;
+	width: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+		
+}
+
+#child-links{
+	margin: 18px 8px;
+	padding: 0;
+}
+
+#child-links span a{
+	color: #b61235;
+}
+
+#child-links ul{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#child-links li{
+	list-style:none;
+	display: inline;
+	margin-right: 20px;
+}
+
+#child-links li a{
+	color: #5a5e5d;
+}
+
+#child-links a{
+	/* Droid Sans Regular 12px */
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#child-links .current_page_item a{
+	border-bottom: 1px solid #ddd;
+	cursor: default;
+}
+
+
+#page{
+	
+	width: 500px;  
+}
+
+section #page h1{
+	text-transform:uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 34px;
+}
+
+
+aside{
+	float: left;
+	margin-right: 10px;
+	min-width: 200px;
+	width: 35%;
+	margin-top: 15px;
+
+}
+
+aside article{
+	text-align:center;
+	vertical-align:middle;
+	padding-bottom: 20px;
+	border-bottom: #000 thin dotted;
+}
+
+aside article h5{
+	/* Droid Sans Bold 11px, #434343*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #434343;
+}
+
+aside sub {
+	/* Droid Sans Regular 10px #a3a5a6*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color: #a3a5a6;
+}
+
+aside p{
+	/* Droid Sans Regular 10px #767b7b*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#767b7b;
+	padding-bottom: 10px;	
+}
+
+aside span{
+	margin: 10px 0;
+}
+
+aside .button{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999;
+	text-decoration:none;
+	text-transform: uppercase;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: 10px;	
+}
+
+aside .button:hover{
+	background-color: #6e0206;
+	color: #fff;
+}
+
+
+
+footer{
+	width: 100%;
+	background-color: #8b0e28;
+}
+
+footer #title-info{
+	padding: 10px 60px;
+	width: 25%;
+	float:left;
+	color: #fff;
+}
+
+
+footer #title-info h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0;
+}
+
+footer #title-info p{
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	margin:0;
+
+}
+
+footer .menu{
+	float: left;
+	margin: 6px;
+	padding: 6px 2px; 
+}
+
+footer .menu li{
+	list-style: none;
+	display: inline;
+	padding: 20px 2px;
+	
+}
+
+footer .menu a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+
+footer #copyright{
+	
+	background-color: #530615;
+	margin:0;
+	padding: 2px;
+	font: Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+footer .col1{
+	float: left;
+	display:inline;
+	width: 50%;
+	padding: 0 60px;
+	font: Arial, Helvetica, sans-serif;
+}
+
+
+footer .col2{
+	display: inline;
+	width: 50%;
+	padding: 0 60px;
+	font: Arial, Helvetica, sans-serif;
+}
+
+footer .col1 p{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding: 0;
+
+}
+
+footer .col2 p{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding: 0;
+	text-align:right;
+	display: inline;
+}
+
+.clearfix{
+	clear:both;
+}
+/*style.css*/
