@@ -9,9 +9,14 @@ Text Domain: taleron
 
 */
 
+html{
+	font-size: 0.875em;
+}
 
 body{
 	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.45;	
 	min-width: 800px;
 	width: 100%;
 	min-height: 600px;
@@ -127,7 +132,7 @@ section{
 
 .post{
 	margin-right: 20px;
-	padding-left : 10px;
+	padding-left : 20px;
 	padding-right: 20px;
 	border-top: solid 6px #b31133;
 	border-left: solid 1px #CDD4CD;
@@ -135,6 +140,14 @@ section{
 	border-bottom: solid 1px #CDD4CD;
 	background-color: #fff;
 	box-shadow: 0 0 3px #dbdbdd;
+}
+
+.post h1 a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	color: #B63034;
+	text-decoration:none;
 }
 
 section .post img{
@@ -151,12 +164,15 @@ section .post h1{
 
 section .post h1, section .post h2, section .post h3, section .post h4, section .post h5, section .post h6{
 	text-transform:uppercase;
+	font-weight: 300;
 }
 
 section .post p{
 	font-family: 'Droid Sans', sans-serif;
 	font-size:14px;
-	color: #565656;	
+	color: #565656;
+	line-height: 1.6em;
+	padding-bottom: 1em;
 }
 
 .full-width{
@@ -173,8 +189,8 @@ section .post p{
 }
 
 #updates{
-	padding-left: 10px;
-	padding-right: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-right: 20px;
 	border: solid 1px #CDD4CD;
 	box-shadow: 0 0 3px #dbdbdd;
@@ -185,8 +201,7 @@ section .post p{
 	font-weight: 300;
 	position:relative;
 	display: inline-block;
-	margin-left: 10px;
-	padding: 3px 20px;
+	padding: 3px 30px;
 	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
@@ -203,11 +218,11 @@ section .post p{
  	width: 100%;
 	min-width: 400px;
 	min-height: 40px;
-	border-bottom: thin dotted #999;
+	border-bottom: thin solid #b0b0b0;
 }
 
 .itemheadblock {
-	padding: 8px 0;
+	padding: 8px 10px 0 0;
 }
 
 .itemendblock{
@@ -217,7 +232,7 @@ section .post p{
 
 .item{
 	float:left;
-	padding: 0 4px;
+	padding: 0 10px;
 	width: 90%;
 }
 
@@ -246,7 +261,6 @@ section .post p{
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 11px;
 	color: #fff; 
-	margin: 0 10px;
 	text-align:center;
 }
 
@@ -259,7 +273,7 @@ section .post p{
 }
 .publishdate{
 	float:left;
-	padding: 0 10px;
+	padding: 0 28px;
 	width: 90%;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 12px;
