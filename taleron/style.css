@@ -1,6 +1,6 @@
 /*
 Theme Name: Taleron
-Theme URI: http://andrebonner.org/wordpress/taleron
+Theme URI: http://andrebonner.com/wordpress/taleron
 Author: Andre Bonner
 Author URI: http://andrebonner.com/
 Description: In Taleron, my custom theme.
@@ -14,16 +14,15 @@ body{
 	font-family: 'Droid Sans', sans-serif;
 	min-width: 800px;
 	width: 100%;
+	min-height: 600px;
+	height: auto;
 	margin: 0;
-}
-
-img{
-	max-width: 100%;
-	height:auto;
 }
 
 #wrapper{
 	margin: 0 10px;
+	width: 100%;
+	min-height: 420px;
 	height: 100%;
 	padding-top: 28px;
 	padding-bottom: 28px;
@@ -54,6 +53,10 @@ header h1{
 	font-weight:bold;
 	text-transform:uppercase;
 	font-size: 50px;
+}
+
+header a image{
+	padding-top: 20px;
 }
 
 header a{
@@ -110,7 +113,7 @@ header .menu a{
 	text-decoration:none;
 	text-transform:uppercase;
 	margin: 0px;
-	padding: 7px 0;
+	padding: 7px 0; 
 }
 
 section{
@@ -123,19 +126,30 @@ section{
 }
 
 .post{
-	border-top:solid 8px #b31133;
-	border-left: solid 1px #999;
-	border-right: solid 1px #999;
-	border-bottom: solid 1px #999;
 	margin-right: 20px;
 	padding-left : 10px;
 	padding-right: 20px;
+	border-top: solid 6px #b31133;
+	border-left: solid 1px #CDD4CD;
+	border-right: solid 1px #CDD4CD;
+	border-bottom: solid 1px #CDD4CD;
+	background-color: #fff;
+	box-shadow: 0 0 3px #dbdbdd;
+}
+
+section .post img{
+	max-width: 100%;
+	height:auto;
 }
 
 section .post h1{
+	/*Oswald Light 34px*/
 	font-family: 'Oswald', sans-serif;
 	font-weight: light;
 	font-size: 34px;
+}
+
+section .post h1, section .post h2, section .post h3, section .post h4, section .post h5, section .post h6{
 	text-transform:uppercase;
 }
 
@@ -145,20 +159,34 @@ section .post p{
 	color: #565656;	
 }
 
+.full-width{
+	width: 90%;
+	min-width: 800px;
+}
+
+.full-width nav {
+	width: 100%;
+}
+
+.full-width #page{
+	width: 100%;
+}
+
 #updates{
 	padding-left: 10px;
 	padding-right: 26px;
 	margin-right: 20px;
-	border: solid 1px #999;
+	border: solid 1px #CDD4CD;
+	box-shadow: 0 0 3px #dbdbdd;
 }
 
 #updates h1{
 	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
 	position:relative;
 	display: inline-block;
 	margin-left: 10px;
-	padding: 0 10px;
-	font-weight: light;
+	padding: 3px 20px;
 	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
@@ -174,6 +202,7 @@ section .post p{
 	padding: 6px 0;
  	width: 100%;
 	min-width: 400px;
+	min-height: 40px;
 	border-bottom: thin dotted #999;
 }
 
@@ -188,44 +217,53 @@ section .post p{
 
 .item{
 	float:left;
-	padding: 0 6px;
+	padding: 0 4px;
 	width: 90%;
 }
 
 .item a{
 	/* Droid Sans Regular 13px #6e0206 */
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 13px;
 	text-decoration: none;
-	color: #6e0206;
+	color: #B63034;
 }
 
 .itemhead{
-	/* Droid Sans 14px #343733*/
 	padding: 6px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: Regular;
 	color: #343733;
 }
 
 .itemnum{
-	float:left;
-	width: 2%;
-	border-radius: 2px;
+	float: left;
+	height: 18px;
+	width: 18px;
+	border-radius: 13px;
 	background-color: #000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 11px;
 	color: #fff; 
 	margin: 0 10px;
+	text-align:center;
 }
 
+.itemnull{
+	float:left;
+	width: 2%;
+	border-radius: 7px;
+	margin: 0 10px;
+	text-align:center;
+}
 .publishdate{
-	/* Droid Sans Regular 12px #545454*/
-	padding: 6px;
-	width: 100%;
-	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	padding: 0 10px;
+	width: 90%;
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 12px;
-		
+	color: #545454;
 }
 
 #child-links{
@@ -338,16 +376,15 @@ aside .button:hover{
 	color: #fff;
 }
 
-
-
 footer{
 	width: 100%;
 	background-color: #8b0e28;
 }
 
 footer #title-info{
-	padding: 10px 60px;
-	width: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
 	float:left;
 	color: #fff;
 }
@@ -368,7 +405,7 @@ footer #title-info p{
 }
 
 footer .menu{
-	float: left;
+	float: right;
 	margin: 6px;
 	padding: 6px 2px; 
 }
@@ -389,44 +426,43 @@ footer .menu a{
 }
 
 footer #copyright{
-	
 	background-color: #530615;
 	margin:0;
 	padding: 2px;
 	font: Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-transform: uppercase;
+	width: 100%;
 }
 
 footer .col1{
 	float: left;
 	display:inline;
-	width: 50%;
-	padding: 0 60px;
+	width: 60%;
+	padding-left: 60px;
 	font: Arial, Helvetica, sans-serif;
 }
 
 
 footer .col2{
 	display: inline;
-	width: 50%;
-	padding: 0 60px;
+	padding: 0;
 	font: Arial, Helvetica, sans-serif;
 }
 
-footer .col1 p{
+footer #copyright p{
 	font-family:Arial, Helvetica, sans-serif;
 	margin:0;
 	padding: 0;
+}
+
+footer .col1 p{
+	
 
 }
 
 footer .col2 p{
-	font-family:Arial, Helvetica, sans-serif;
-	margin:0;
-	padding: 0;
 	text-align:right;
-	display: inline;
 }
 
 .clearfix{
