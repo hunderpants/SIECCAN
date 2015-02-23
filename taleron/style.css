@@ -23,10 +23,16 @@ body{
 	height: auto;
 	margin: 0;
 }
+p{
+	font-family: 'Droid Sans', sans-serif;
+	font-size:1em;
+	color: #565656;
+	line-height: 1.6em;
+	padding-bottom: 1em;
+}
 
 #wrapper{
 	margin: 0 10px;
-	width: 100%;
 	min-height: 420px;
 	height: 100%;
 	padding-top: 28px;
@@ -114,8 +120,8 @@ header .menu a:hover{
 header .menu a{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 700;
-	font-size: 13px;
-	letter-spacing: 0.05em;
+	font-size: 0.85em;
+	letter-spacing: 0.07em;
 	color: #fff;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -146,7 +152,6 @@ section:last-child{
 	background-color: #fff;
 	box-shadow: 0 0 3px #dbdbdd;
 }
-
 .post h1{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
@@ -162,6 +167,9 @@ section:last-child{
 	text-decoration:none;
 	text-transform: none;
 }
+.post h1 a:hover{
+	text-decoration: underline;
+}
 section .post img{
 	max-width: 100%;
 	height:auto;
@@ -172,15 +180,6 @@ section .post h1, section .post h2, section .post h3, section .post h4, section 
 	font-weight: 300;
 	letter-spacing: 0.02em;
 }
-
-section .post p{
-	font-family: 'Droid Sans', sans-serif;
-	font-size:1em;
-	color: #565656;
-	line-height: 1.6em;
-	padding-bottom: 1em;
-}
-
 .full-width{
 	width: 90%;
 	min-width: 800px;
@@ -201,7 +200,9 @@ section .post p{
 	border: solid 1px #CDD4CD;
 	box-shadow: 0 0 3px #dbdbdd;
 }
-
+#updates a:hover{
+	text-decoration:underline;
+}
 #updates h1{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
@@ -237,14 +238,13 @@ section .post p{
 }
 
 .item{
-	float:left;
-	padding: 0 10px;
+	padding-left: 30px;
+	line-height: 1.1em;
 }
 
 .item a{
-	/* Droid Sans Regular 13px #6e0206 */
 	font-family: 'Droid Sans', sans-serif;
-	font-size: 13px;
+	font-size: 0.85em;
 	text-decoration: none;
 	color: #B63034;
 }
@@ -277,11 +277,10 @@ section .post p{
 	text-align:center;
 }
 .publishdate{
-	float:left;
-	padding: 0 28px;
+	padding-top: 5px;
 	width: 90%;
 	font-family: 'Droid Sans', sans-serif;
-	font-size: 12px;
+	font-size: 0.85em;
 	color: #545454;
 }
 
@@ -311,8 +310,8 @@ section .post p{
 }
 
 #child-links a{
-	/* Droid Sans Regular 12px */
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
+	font-size:0.75em;
 	text-transform:uppercase;
 	text-decoration:none;
 }
@@ -324,17 +323,43 @@ section .post p{
 
 
 #page{
-	
 	width: 500px;  
+}
+section #page h1, 
+section #page h2, 
+section #page h3, 
+section #page h4 {
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
 }
 
 section #page h1{
-	text-transform:uppercase;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 34px;
+	font-weight: 300;
+	font-size: 2.369em;
+}
+section #page a{
+	font-weight: 300;
+	color: #B63034;
+}
+.resource-documents{
+	float: left;
+	width: 60%;
+	min-width: 500px;
+	margin: 20px 0; 
+	padding-bottom: 20px;
+	border-bottom: #000 thin dotted;	
 }
 
+.resource-image{
+	zoom:1;
+	float: left;
+	padding: 0 10px;
+	display: inline;
+	width: 146px;
+	height: 198px;
+	background-image: url('images/report-overlay-bg.png');
+	background-size:cover;
+}
 
 aside{
 	float: left;
@@ -361,16 +386,16 @@ aside article h5{
 }
 
 aside sub {
-	/* Droid Sans Regular 10px #a3a5a6*/
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size:0.75em;
 	color: #a3a5a6;
 }
 
 aside p{
-	/* Droid Sans Regular 10px #767b7b*/
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size:0.75em;
 	color:#767b7b;
 	padding-bottom: 10px;	
 }
@@ -380,8 +405,9 @@ aside span{
 }
 
 aside .button{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size: 0.85em;
 	color: #999;
 	text-decoration:none;
 	text-transform: uppercase;
@@ -398,57 +424,71 @@ aside .button:hover{
 footer{
 	width: 100%;
 	background-color: #8b0e28;
+	color:#FFF;
+}
+footer p{
+	color:#FFF;
 }
 
 footer #title-info{
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 60px;
+	padding-left: 50px;
 	float:left;
 	color: #fff;
 }
-
-
 footer #title-info h2{
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:bold;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:700;
 	text-transform:uppercase;
 	margin:0;
 }
 
 footer #title-info p{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
+	font-size:0.75em;
+	font-weight:400;
 	text-transform:uppercase;
 	margin:0;
-
 }
-
+#title-info h2+p {
+	margin-top:10px;
+	font-size:1em;
+}
 footer .menu{
 	float: right;
 	margin: 6px;
 	padding: 6px 2px; 
 }
-
+footer .menu a{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+	font-size: 0.85em;
+	letter-spacing: 0.07em;
+	color: #fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin-left: 10px;
+	padding: 11px 3px;	; 
+}
+footer .menu a:hover{
+	border-color: #f7be2f;
+	border-top-style: solid;
+	border-top-width: 5px 
+}
 footer .menu li{
+	margin:10px;
 	list-style: none;
 	display: inline;
-	padding: 20px 2px;
-	
+	padding: 20px 2px;	
 }
-
-footer .menu a{
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:bold;
-	text-transform:uppercase;
-	text-decoration: none;
-	color: #fff;
-}
-
 footer #copyright{
+	font-family: 'Droid Sans', sans-serif;
+	font-size:0.75em;
 	background-color: #530615;
+	padding-top:5px;
+	padding-bottom:5px;
 	margin:0;
-	padding: 2px;
-	font: Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-transform: uppercase;
 	width: 100%;
@@ -458,19 +498,18 @@ footer .col1{
 	float: left;
 	display:inline;
 	width: 60%;
-	padding-left: 60px;
-	font: Arial, Helvetica, sans-serif;
+	padding-left: 50px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 
 footer .col2{
-	display: inline;
-	padding: 0;
-	font: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
+	padding-right: 50px;
 }
 
 footer #copyright p{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	margin:0;
 	padding: 0;
 }
