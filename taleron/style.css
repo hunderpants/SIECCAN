@@ -55,7 +55,7 @@ header h1{
 	margin:0;
 	padding: 0;
 	font-family: 'Droid Sans', sans-serif;
-	font-weight:bold;
+	font-weight: 700;
 	text-transform:uppercase;
 	font-size: 50px;
 }
@@ -88,13 +88,14 @@ header .menu {
 	background-color: #b61235;
 	padding-top: 1%;
 	min-height: 30px;
+	text-shadow: -1px 0 0 rgba(1,1,1,.2);
 }
 
 header .menu li{
-	margin: 0;
+	margin: 10px;
 	list-style: none;
 	display: inline;
-	padding: 0 20px;
+	padding-right: 20px;
 }
 
 header .current_page_item a, header .current-page-ancestor a
@@ -112,22 +113,26 @@ header .menu a:hover{
 
 header .menu a{
 	font-family: 'Droid Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 13px;
+	letter-spacing: 0.05em;
 	color: #fff;
 	text-decoration:none;
 	text-transform:uppercase;
 	margin: 0px;
-	padding: 7px 0; 
+	padding: 7px 3px;	; 
 }
 
 section{
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
  	width: 60%;
 	min-width: 500px;
+}
+section:last-child{
+	margin-bottom:60px;
 }
 
 .post{
@@ -142,34 +147,35 @@ section{
 	box-shadow: 0 0 3px #dbdbdd;
 }
 
+.post h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 1.777em;
+	color: #373a37;
+	text-decoration:none;
+	text-transform: none;
+}
 .post h1 a{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	font-size: 13px;
-	color: #B63034;
+	color: #373a37;
 	text-decoration:none;
+	text-transform: none;
 }
-
 section .post img{
 	max-width: 100%;
 	height:auto;
 }
-
-section .post h1{
-	/*Oswald Light 34px*/
-	font-family: 'Oswald', sans-serif;
-	font-weight: light;
-	font-size: 34px;
-}
-
 section .post h1, section .post h2, section .post h3, section .post h4, section .post h5, section .post h6{
+	margin: 1.414em 0 0.5em;
 	text-transform:uppercase;
 	font-weight: 300;
+	letter-spacing: 0.02em;
 }
 
 section .post p{
 	font-family: 'Droid Sans', sans-serif;
-	font-size:14px;
+	font-size:1em;
 	color: #565656;
 	line-height: 1.6em;
 	padding-bottom: 1em;
@@ -202,7 +208,7 @@ section .post p{
 	position:relative;
 	display: inline-block;
 	padding: 3px 30px;
-	font-size: 18px;
+	font-size: 1.333em;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: #000;
@@ -233,7 +239,6 @@ section .post p{
 .item{
 	float:left;
 	padding: 0 10px;
-	width: 90%;
 }
 
 .item a{
@@ -248,7 +253,7 @@ section .post p{
 	padding: 6px;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 14px;
-	font-weight: Regular;
+	font-weight: 300;
 	color: #343733;
 }
 
