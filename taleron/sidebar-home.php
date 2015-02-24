@@ -1,12 +1,14 @@
 <?php
-/*sidebar.php*/
+/*sidebar-home.php*/
 ?>
-	<aside>
+<aside>
 		<?php $ads = new WP_Query('tag='. $post->post_name .'&posts_per_page=5'); ?>
         <?php if($ads->have_posts()):?>
 		<?php			while($ads->have_posts()) : $ads->the_post();
 		?>
 		<article>
+			
+			
 			<?php if (has_post_thumbnail()){?>
 			<div class="resource-image-side">
 			<?php the_post_thumbnail('small-thumbnail');?>

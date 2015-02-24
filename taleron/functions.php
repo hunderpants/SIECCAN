@@ -21,6 +21,30 @@ function has_children(){
 	return count($pages);
 }
 
+// get button values
+function get_buttons(){
+	global $post;
+	
+	$sep = array(',','|',':');
+	
+	$custom_fields = get_post_custom($post->ID);
+	$my_custom_field = $custom_fields['button'];
+	if(is_array($my_custom_fields)):
+	foreach ( $my_custom_field as $key => $value ) {
+		 $vals = split(',',$value);
+		 if(is_array($vals)):
+		 ?>
+		 <span>
+				<a class="button" href="<?php echo $vals[1];?>">
+				<?php echo $vals[0];?>
+				</a>
+		</span>
+		 <?php
+		 endif;
+	}
+	endif;
+}
+
 // Length of content for excerpt
 function t_excerpt_length(){
 	// sets the amount of characters an excerpt contains
@@ -38,7 +62,7 @@ function taleronWP_setup(){
 	));
 	// add featured image support
 	add_theme_support('post-thumbnails');
-	add_image_size('small-thumbnail', 180, 120, true);
+	add_image_size('small-thumbnail', 180, 180, true);
 	add_image_size('banner-image', 460, 160, array('left','top'));
 }
 

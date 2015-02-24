@@ -17,7 +17,7 @@
 	
 		<header>
 			<div id="head-info">
-				<h1><a href="<?php echo esc_url(home_url('/'));?>"><?php bloginfo('name');?></a></h1>
+				<h1><a href="<?php echo esc_url(home_url('/'));?>"><img src="<?php echo get_bloginfo('template_directory');?>/images/sieccan-logo-header.png" alt="<?php bloginfo('name');?>" title="<?php bloginfo('name');?>"></img></a></h1>
 				<h5><?php bloginfo('description');?></h5>
 			</div>
 			<nav>
