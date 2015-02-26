@@ -22,7 +22,9 @@ body{
 	min-height: 600px;
 	height: auto;
 	margin: 0;
-	background-color: #fefefe;
+	background-color: #F6F6F6;
+	background-image: url('images/nice-snow.png');
+	background-size:cover;
 }
 a{
 	color: #B63034;
@@ -212,6 +214,7 @@ section .post h1, section .post h2, section .post h3, section .post h4, section 
 	margin-right: 20px;
 	border: solid 1px #CDD4CD;
 	box-shadow: 0 0 3px #dbdbdd;
+	background-color:#FFF;
 }
 #updates a:hover{
 	text-decoration:underline;
@@ -368,12 +371,13 @@ section #page a{
 .resource-image{
 	zoom:1;
 	float: left;
-	padding: 0 10px;
-	display: inline;
 	width: 163px;
 	height: 196px;
 	background-image: url('images/report-overlay-bg.png');
-	background-size:cover;
+	box-sizing: border-box;
+	margin-top:20px;
+	padding-left:12px;
+	padding-top:2px;
 }
 
 .resource-image-side{
@@ -382,45 +386,50 @@ section #page a{
 	height: 196px;
 	background-image: url('images/report-overlay-bg.png');
 	background-repeat: no-repeat;
+	box-sizing: border-box;
+	margin:auto;
+	margin-top:40px;
+	padding-top:2px;
 }
 
 .wp-post-image{
 	margin: 0;
 }
-
+.attachment-banner-image {
+	max-width: 100%;
+	margin-top:20px;
+}
 .resource-info{
-	float: left;
-	
+	margin-top:40px;
 }
 
 .resource-info p{
 	
 }
 aside{
+	font-family: 'Droid Sans', sans-serif;
 	float: right;
-	margin-right: 10px;
 	min-width: 200px;
 	width: 35%;
-	margin-top: 15px;
 }
 
 aside article{
+	margin-top: 50px;
 	text-align:center;
 	vertical-align:middle;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	border-bottom: #000 thin dotted;
 }
-
+aside article:first-of-type{
+	margin-top: 15px;
+}
 aside article h5{
-	/* Droid Sans Bold 11px, #434343*/
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 11px;
+	font-weight: 700;
+	font-size: 0.75em;
 	color: #434343;
 }
 
 aside sub {
-	font-family: 'Droid Sans', sans-serif;
 	font-weight:400;
 	font-size:0.75em;
 	color: #a3a5a6;
@@ -438,7 +447,7 @@ aside span{
 	margin: 10px 0;
 }
 
-span .button{
+.button{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.85em;
@@ -451,13 +460,15 @@ span .button{
 	margin: 0 5px;	
 }
 
-span .button:hover{
+.button:hover{
 	background-color: #6e0206;
 	color: #fff;
+	text-decoration: none;
 }
 
 footer{
 	width: 100%;
+	font-family: 'Droid Sans', sans-serif;
 	background-color: #8b0e28;
 	color:#FFF;
 }
@@ -473,7 +484,6 @@ footer #title-info{
 	color: #fff;
 }
 footer #title-info h2{
-	font-family: 'Droid Sans', sans-serif;
 	font-weight:700;
 	text-transform:uppercase;
 	margin:0;
@@ -493,7 +503,7 @@ footer #title-info p{
 footer .menu{
 	float: right;
 	margin: 6px;
-	padding: 6px 2px; 
+	padding: 6px 30px 6px 2px; 
 }
 footer .menu a{
 	font-family: 'Droid Sans', sans-serif;
@@ -506,6 +516,14 @@ footer .menu a{
 	margin-left: 10px;
 	padding: 11px 3px;	; 
 }
+
+footer .current_page_item a, footer .current-page-ancestor a{
+	border-color: #f7be2f;
+	border-top-style: solid;
+	border-top-width: 5px 
+}
+
+
 footer .menu a:hover{
 	border-color: #f7be2f;
 	border-top-style: solid;
@@ -521,8 +539,7 @@ footer #copyright{
 	font-family: 'Droid Sans', sans-serif;
 	font-size:0.75em;
 	background-color: #530615;
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-top:10px;
 	margin:0;
 	color: #fff;
 	text-transform: uppercase;
@@ -534,29 +551,24 @@ footer .col1{
 	display:inline;
 	width: 60%;
 	padding-left: 50px;
-	font-family: 'Droid Sans', sans-serif;
 }
 
 
 footer .col2{
-	display: inline;
 	font-family: 'Droid Sans', sans-serif;
-	padding-right: 50px;
 }
 
 footer #copyright p{
 	font-family: 'Droid Sans', sans-serif;
 	margin:0;
-	padding: 0;
 }
 
 footer .col1 p{
-	
-
 }
 
 footer .col2 p{
 	text-align:right;
+	padding-right:50px;
 }
 
 .clearfix{
